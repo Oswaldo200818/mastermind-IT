@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+/**
+* importa los estilos de bootstrap directo de la carpeta node_modules.
+* importar desde el archivo angular.json no funciona correctamente por eso mejor hacer
+  de esta manera.
+*/
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import url('./assets/font/font.css');
+
+:root{
+  --navbar-brand-title-size: 25px;
+  --navbar-brand-font-family-Bold: 'Poppins-Bold', sans-serif;
+  --navbar-brand-font-family-Regular: 'Poppins-Regular', sans-serif;
+}
