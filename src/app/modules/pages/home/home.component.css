@@ -47,10 +47,10 @@ HEADER
   font-size: 1rem;
 }
 .nav-link:hover{
-  color: rgb(0, 20,245);
+  color: #0069d9;
 }
 .navbar-nav li.active a{
-  color: rgb(0, 20,245);
+  color: #0069d9;
   background-color: transparent;
   font-family: var(--navbar-brand-font-family-Regular);
 }
@@ -67,11 +67,11 @@ HERO SLIDER
   align-items: center;
 }
 .hero .hero-title{
-font-size: 4rem;
-font-weight: bold;
-color: #fff;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-margin-bottom: 2rem;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 2rem;
 }
 .hero .hero-text{
   font-size: 1.5rem;
@@ -90,9 +90,10 @@ margin-bottom: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: all 0.3s ease-in-out;
+  border: #3b3a3a;
 }
 .hero .hero-btn:hover{
-  background: #000;
+  background: #0069d9;
   color:#fff;
 }
 /*******************
@@ -100,34 +101,96 @@ ABOUT
 ********************/
 .about{
   background-color: #f8f9fa;
+  max-height: 100%;
 }
 
 .about .about-title{
   font-size: 2.5rem;
   font-weight: bold;
-  text-align: center;
-  color: #212529;
 }
 .about .about-text{
-  font-size: 1.25rem;
-  line-height: 1.8;
+  font-size: 1rem;
   text-align: justify;
   color: #6c757d;
-  margin: 2rem auto;
   max-width: 800px;
   font-family: var(--navbar-brand-font-family-Regular);
 }
+.about .content-img{
+  width: 100%;
+  position: relative;
+}
+.about .img-about{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  box-shadow: 0 0px 5px #0069d9;
 
+}
+.content-img:hover .img-about {
+  filter: none;
+  cursor: pointer;
+
+}
+.about .about-goals{
+  padding-top: 1rem;
+}
+.about .about-goals .card{
+  border: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.about .about-goals .card:hover{
+  transform: translateY(-5px);
+}
+.about .about-goals .card .card-text{
+height: 185px;
+overflow: hidden;
+font-size: 1rem;
+color: #6c757d;
+max-width: 800px;
+font-family: var(--navbar-brand-font-family-Regular);
+text-align: justify;
+}
+.about
+.title-proposito,
+.title-mision,
+.title-vision{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #212529;
+  text-align: center;
+
+
+}
+.about
+.text-proposito,
+.text-mision,
+.text-vision{
+  font-size: 1rem;
+  color: #6c757d;
+  max-width: 800px;
+  font-family: var(--navbar-brand-font-family-Regular);
+}
 /***************
 SERVICES
 ****************/
 .services{
   background-color: #f8f9fa;
+  max-height: 100%;
 }
 .services .services-title{
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 3rem;
+  padding-top: 25px;
+  text-align: center;
+}
+.services .link-services {
+  text-decoration: none;
 }
 .services .card{
   border: none;
@@ -137,24 +200,48 @@ SERVICES
 .services .container .card{
   border-bottom-right-radius: 25px;
 }
-.services .card:hover {
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
-}
 
-.services .card-title{
+
+.services .card-wrapper:hover .card,
+.services .card-wrapper:hover .fa-code,
+.services .card-wrapper:hover .fa-users,
+.services .card-wrapper:hover .fa-gear,
+.services .card-wrapper:hover .fa-magnifying-glass,
+.services .card-wrapper:hover .card-title,
+.services .card-wrapper:hover .card-text {
+  background-color: #212529;
+  color: #fff;
+}
+.services .link-services{
+  text-decoration: none;
+  color: inherit;
+}
+.link-services .card-title{
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  text-align: center;
+}
+.services
+.icon-img
+.fa-code,
+.fa-users,
+.fa-gear,.fa-magnifying-glass{
+  color: #0069d9;
 }
 
+.services .icon-img{
+  color: #5f5f5f;
+  font-size: 50px;
+  text-align: center;
+}
 .services .card-text{
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: 1rem;
   color: #6c757d;
+  text-align: justify;
   font-family: var(--navbar-brand-font-family-Regular);
-  height: 175px;
+  height: 120px;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .services .row{
@@ -182,11 +269,14 @@ BLOG
 .blog{
   background-color: #f7f7f7;
   padding: 70px 0;
+  max-height: 100%;
 }
-.blog .about-title{
-font-size: 2.5rem;
-font-weight: bold;
-margin-bottom: 50px;
+.blog .blog-title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  text-align: center;
 }
 .blog .card{
   border: none;
@@ -206,33 +296,25 @@ margin-bottom: 50px;
   height: 200px;
   object-fit: cover;
 }
-.blog .card-title{
+.blog .link-title{
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 10px;
+}
+.blog .link-title .text-title{
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 10px;
-  font-family: var(--navbar-brand-font-family-Bold);
-  border-top: none !important;
 }
-
+.blog .link-title .text-title:hover{
+  color: #0069d9;
+}
 .blog .card-text{
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: 1rem;
   color: #6c757d;
   font-family: var(--navbar-brand-font-family-Regular);
-  height: 175px;
+  height: 160px;
   overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.blog .btn-info-blog{
-  background-color: #007bff;
-  border-color: #007bff;
-  font-size: 1rem;
-  font-weight: bold;
-}
-.blog .btn-info-blog:hover{
-  background-color: #0069d9;
-  border-color: #0062cc;
+  text-align: justify;
 }
 /*************
 Contact
@@ -240,13 +322,15 @@ Contact
 .contact{
   background-color: #f7f7f7;
   font-family: var(--navbar-brand-font-family-Regular);
+  max-height: 100%;
 }
 .contact .contact-title{
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 50px;
+  padding-top: 25px;
+  text-align: center;
 }
-/*******************************************/
 .contact .data-information{
   background-color: #212529;
   border-radius: 10px 10px 100px 10px;
@@ -256,9 +340,8 @@ Contact
  padding-bottom: 25px;
 }
 .contact .contact-title-information{
-  font-size: 18px;
-  font-family: var(--navbar-brand-font-family-Regular);
-  font-weight: bold;
+  font-size: 17px;
+  font-family: var(--navbar-brand-font-family-Bold);
   padding-top: 15px;
   margin-bottom: 10px;
   color: #fff;
@@ -272,32 +355,6 @@ Contact
   padding: 0;
 }
 
-.contact .icons{
-  color: #5f5f5f;
-  font-size: 24px;
-  margin-right: 10px;
-  text-align: center;
-}
-
-.contact .icons-text{
-color: #5f5f5f;
-font-size: 16px;
-font-family: var(--navbar-brand-font-family-Regular);
-margin-right: 10px;
-text-decoration: none;
-}
-.contact .information .container-icons{
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  text-align: center;
-}
-
-.contact .icons-text:hover{
-  color: #007bff;
-}
-/*******************************************/
 .form-control{
   border-bottom-right-radius: 25px !important;
 }
@@ -312,6 +369,7 @@ text-decoration: none;
   margin-bottom: 20px;
   padding: 10px;
   width: 100%;
+
 }
 
 .contact .form input:focus,
@@ -339,18 +397,72 @@ width: 25%;
 .contact .form .btn-send:hover{
   color:#0069d9;
 }
-
-.contact .footer {
+.footer{
+  background-color: #f7f7f7;
+  padding: 0;
+  margin: 0;
+  max-height: 100%;
+}
+.footer .content-footer {
   background-color: #212529;
   font-family: var(--navbar-brand-font-family-Regular);
-  height: 80px;
-  margin: 30px 0 0 0;
-  padding: 30px 0 0 0;
+  height: 125px;
+  margin: 0;
+  padding: 0;
   text-align: center;
   color: #fff;
   font-size: 15px;
 }
+.footer .content-footer .container-icons{
+  width: 100%;
+  padding-top: 10px;
+}
+.footer .content-footer .container-icons .icons-text{
+  color: #ced4da;
+  font-size: 30px;
+  font-family: var(--navbar-brand-font-family-Regular);
+  text-decoration: none;
+  padding: 10px;
+}
 
+.footer .content-footer .fa-facebook:hover{
+  color: #3B5998;
+}
+.footer .content-footer .fa-youtube:hover{
+  color: #FF0000;
+}
+.footer .content-footer .footer-title{
+  padding: 5px;
+}
 
+/***************
+Animations
+****************/
+.fade-in{
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all  1s ease-in-out;
+}
 
+.fade-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 2s ease-in-out;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 1s ease-in-out;
+}
+
+.fade-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 2s ease-in-out;
+}
+
+/****************
+responsive design
+*****************/
 

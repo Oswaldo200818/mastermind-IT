@@ -31,69 +31,55 @@
       <a href="#" class="btn btn-primary btn-lg hero-btn">Saber más</a>
     </div>
   </section>
-  <section class="about py-5 fade-in" id="about"  >
+  <section class="about py-5 fade-in" id="about" [class.visible]="aboutVisible">
     <div class="container">
-      <h2 class="about-title">Nosotros</h2>
-      <p class="about-text">
-        Somos una empresa de tecnología enfocada en brindar soluciones
-        informáticas a empresas y particulares. Nuestro equipo de expertos en
-        tecnología está dedicado a ofrecer un servicio excepcional a nuestros
-        clientes.
-      </p>
-    </div>
-  </section>
-  <section class="services py-5" id="services">
-    <div class="container">
-      <h2 class="services-title">Servicios</h2>
+      <!-- <h2 class="about-title">Nosotros</h2> -->
       <div class="row">
-        <div class="col-md-6 col-lg-6 mb-4">
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="content-img">
+            <img src="../../../../assets/image/about.jpg" alt="about" class="img-about filter rounded" >
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mt-5">
+          <h2 class="about-title">Sobre nosotros</h2>
+          <p class="about-text">
+            Somos una empresa de tecnología enfocada en brindar soluciones
+            informáticas a empresas y particulares. Nuestro equipo de expertos en
+            tecnología está dedicado a ofrecer un servicio excepcional a nuestros
+            clientes.
+          </p>
+        </div>
+      </div>
+      <div class="row content-text-about">
+        <div class="col-lg-4 col-md-4 about-goals">
           <div class="card">
             <div class="card-body">
-              <h3 class="card-title">Desarrollo web</h3>
-              <p class="card-text">
-                Desarrollamos sitios web personalizados y aplicaciones web para
-                empresas y particulares. Nuestros servicios incluyen diseño web,
-                desarrollo de front-end y back-end, y optimización para motores de
-                búsqueda.
+              <h3 class="card-title title-proposito">Propósito</h3>
+              <p class="card-text text-proposito">
+                En Mastermind IT, nuestro propósito es ayudar a empresas y organizaciones a
+                alcanzar su máximo potencial a través de soluciones tecnológicas innovadoras y personalizadas.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-6 mb-4">
+        <div class="col-lg-4 col-md-4 about-goals">
           <div class="card">
             <div class="card-body">
-              <h3 class="card-title">Soporte informático</h3>
-              <p class="card-text">
-                Ofrecemos servicios de soporte informático para empresas y
-                particulares, incluyendo reparación de equipos, asistencia técnica y
-                mantenimiento de sistemas.
+              <h3 class="card-title title-mision">Misión</h3>
+              <p class="card-text text-mision">
+                Nuestra misión es ser un socio estratégico confiable para nuestros clientes, ofreciendo servicios
+                y soluciones de tecnología de alta calidad y creando relaciones duraderas basadas en la confianza y el éxito mutuo.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-6 mb-4">
+        <div class="col-lg-4 col-md-4 about-goals">
           <div class="card">
             <div class="card-body">
-              <h3 class="card-title">Optimización de aplicaciones web</h3>
-              <p class="card-text">
-                Optimizamos aplicaciones web para mejorar su velocidad y
-                rendimiento. Nuestros servicios incluyen
-                análisis de la
-                aplicación, identificación y solución de problemas de rendimiento y mejora de la
-                experiencia del usuario.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-6 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Recuperación de datos</h3>
-              <p class="card-text">
-                Ofrecemos servicios de recuperación de datos para empresas y
-                particulares. Nuestros servicios incluyen recuperación de datos de
-                discos duros, unidades flash USB, tarjetas de memoria y otros medios de
-                almacenamiento.
+              <h3 class="card-title title-vision">Visión</h3>
+              <p class="card-text text-vision">
+                Nuestra visión es liderar el mercado de soluciones tecnológicas en nuestra región, ofreciendo soluciones
+                innovadoras y personalizadas que agreguen valor a nuestros clientes y promuevan su éxito sostenible.
               </p>
             </div>
           </div>
@@ -101,27 +87,101 @@
       </div>
     </div>
   </section>
-  <section class="blog py-5" id="blog">
+  <section class="services py-5 fade-right" id="services" [class.visible]="servicesVisible">
     <div class="container">
-      <h2 class="about-title">Blog</h2>
+      <h2 class="services-title">Nuestros servicios</h2>
+      <div class="row">
+        <div class="col-md-6 col-lg-6 mb-4">
+          <a href="" class="link-services">
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="card-body">
+                  <p class="icon-img"><i class="fa-sharp fa-solid fa-code"></i></p>
+                  <h3 class="card-title">Desarrollo web</h3>
+                  <p class="card-text">
+                    Desarrollamos sitios web personalizados y aplicaciones web para
+                    empresas y particulares. Nuestros servicios incluyen diseño web,
+                    desarrollo de front-end y back-end, y optimización para motores de
+                    búsqueda.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-6 mb-4">
+          <a href="" class="link-services">
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="card-body">
+                  <p class="icon-img"><i class="fa-sharp fa-solid fa-users"></i></p>
+                  <h3 class="card-title">Soporte informático</h3>
+                  <p class="card-text">
+                    Ofrecemos servicios de soporte informático para empresas y
+                    particulares, incluyendo reparación de equipos, asistencia técnica y
+                    mantenimiento de sistemas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-6 mb-4">
+          <a href="" class="link-services">
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="card-body">
+                  <p class="icon-img"><i class="fa-sharp fa-solid fa-gear"></i></p>
+                  <h3 class="card-title">Optimización de aplicaciones web</h3>
+                  <p class="card-text">
+                    Optimizamos aplicaciones web para mejorar su velocidad y
+                    rendimiento. Nuestros servicios incluyen
+                    análisis de la
+                    aplicación, identificación y solución de problemas de rendimiento y mejora de la
+                    experiencia del usuario.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-6 mb-4">
+          <a href="" class="link-services">
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="card-body">
+                  <p class="icon-img"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></p>
+                  <h3 class="card-title">Recuperación de datos</h3>
+                  <p class="card-text">
+                    Ofrecemos servicios de recuperación de datos para empresas y particulares. Nuestros servicios incluyen recuperación de datos de discos duros, unidades flash USB, tarjetas de memoria y otros medios de almacenamiento.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog py-5 fade-in" id="blog" [class.visible]="blogVisible">
+    <div class="container">
+      <h2 class="blog-title">Entradas recientes</h2>
       <div class="row">
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card">
             <img src="https://via.placeholder.com/350x200" alt="..." class="card-img-top">
             <div class="card-body">
-              <h3 class="card-title">Cómo optimizar el rendimiento de tu sitio web</h3>
+              <a href="" class="link-title"><h3 class="text-title">Cómo optimizar el rendimiento de tu sitio web</h3></a>
               <p class="card-text">En este artículo te mostramos algunos consejos para mejorar el rendimiento de tu sitio web y brindar una mejor experiencia a tus usuarios.</p>
-              <a href="" class="btn btn-primary btn-info-blog">Leer más</a>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card " >
             <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="...">
-            <div class="card-body border-card">
-              <h3 class="card-title">Los beneficios del soporte informático para empresas</h3>
+            <div class="card-body">
+              <a href="" class="link-title"><h3 class="text-title">Los beneficios del soporte informático para empresas</h3></a>
               <p class="card-text">En este artículo te explicamos cómo el soporte informático puede mejorar la productividad y eficiencia de tu empresa.</p>
-              <a href="#" class="btn btn-primary btn-info-blog">Leer más</a>
             </div>
           </div>
         </div>
@@ -129,18 +189,17 @@
           <div class="card">
             <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="...">
             <div class="card-body">
-              <h3 class="card-title">Cómo recuperar datos perdidos en tu disco duro</h3>
+              <a href="" class="link-title"><h3 class="text-title">Cómo recuperar datos perdidos en tu disco duro</h3></a>
               <p class="card-text">En este artículo te mostramos cómo puedes recuperar datos perdidos en tu disco duro utilizando herramientas y técnicas simples.</p>
-              <a href="#" class="btn btn-primary btn-info-blog">Leer más</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="contact pr-0 mr-0" id="contact" >
+  <section class="contact py-5 fade-left" id="contact" [class.visible]="contactVisible">
     <div class="container">
-      <h2 class="contact-title">Contacto</h2>
+      <h2 class="contact-title">Contáctanos</h2>
       <div class="row">
         <div class="col-lg-4 col-md-4 data-information">
           <div class="information">
@@ -185,10 +244,15 @@
           </div>
         </div>
       </div>
-
     </div>
-    <div class="container-fluid footer">
-          <p class="footer-title">&copy; Copyright Mastermind IT.&nbsp;Todos los derechos reservados.</p>
+  </section>
+  <section class="footer">
+    <div class="container-fluid content-footer">
+      <div class="container-icons">
+        <a href="" class="icons-text"><i class="fa-brands fa-facebook icons"></i></a>
+        <a href="" class="icons-text"><i class="fa-brands fa-youtube icons"></i></a>
+      </div>
+      <p class="footer-title">&copy; Copyright Mastermind IT.&nbsp;Todos los derechos reservados.</p>
     </div>
   </section>
 </main>
